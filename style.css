@@ -183,55 +183,78 @@
 
 
 .ex-13-button:hover .ex-13-top-white {
-  animation: move13-top 1s linear forwards;
+  animation: move13-top 2s linear forwards;
 }
 @keyframes move13-top {
   0%{
     left: 10%
   }
-  25% {
+  30% {
     top: 0;
     left: calc(100% - 30px)
   }
 
-  50% {
+  40% {
     top: 50%;
     left: calc(100% - 30px) ;
   }
 
-  75% {
+  50% {
     top: 100%;
     left: calc(100% - 30px) ;
   }
+
+  70% {
+    bottom: 100%;
+    left: 0;
+  }
+  80% {
+    top: 50%;
+    left:  -30px ;
+  }
+  90% {
+    top: 0;
+    left: -30px ;
+  }
   100% {
-    top: 100%;
-    left: 20%;
+    left: 10%
   }
 }
 .ex-13-button:hover .ex-13-bottom-white {
-  animation: move13-bottom 1s linear forwards;
+  animation: move13-bottom 2s linear forwards;
 }
 @keyframes move13-bottom {
   0% {
     right: 10%
   }
-  25% {
-    bottom: 0;
+  30% {
+    bottom: -15px;
     right: calc(100% - 30px)
   }
 
-  50% {
+  40% {
     bottom: 50%;
     right: calc(100% - 30px) ;
   }
 
-  75% {
+  50% {
     bottom: 100%;
     right: calc(100% - 30px);
   }
 
-  100% {
+  70% {
     bottom: 100%;
-    right: 20%;
+    right: 0;
+  }
+  80% {
+    bottom: 50%;
+    right:  -60px ;
+  }
+  90% {
+    bottom: -15px;
+    right: -60px ;
+  }
+  100% {
+    right: 10%
   }
 }
